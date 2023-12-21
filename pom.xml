@@ -32,7 +32,7 @@
     </dependencies>
 	
     <build>
-        <finalName>java-jsp-diary</finalName>
+        <finalName>diary</finalName>
         <plugins>
             <plugin>
                 <!-- https://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
