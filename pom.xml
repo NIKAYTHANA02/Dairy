@@ -45,10 +45,10 @@
                 </configuration>
             </plugin>
 	    <plugin>
-  		<groupId>org.apache.maven.plugins</groupId>
- 		 <artifactId>maven-war-plugin</artifactId>
-	          <version>2.2</version>
-	    </plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.2.3</version> <!-- Use an appropriate version -->
+            </plugin>
         </plugins>
     </build>
 
