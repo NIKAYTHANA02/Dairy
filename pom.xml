@@ -34,8 +34,19 @@
     <build>
         <finalName>java-jsp-diary</finalName>
         <plugins>
+            <!-- Maven War Plugin -->
             <plugin>
-                <!-- https://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.3</version>
+                <configuration>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            
+            <!-- Tomcat Maven Plugin -->
+            <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
@@ -43,11 +54,6 @@
                     <port>80</port>
                     <path>/</path>
                 </configuration>
-            </plugin>
-	    <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.2.3</version> <!-- Use an appropriate version -->
             </plugin>
         </plugins>
     </build>
